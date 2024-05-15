@@ -1,0 +1,29 @@
+{
+  "name": "dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --build",
+    "start": "node dist/index.js -- --log",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "testWatch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch"
+  },
+  "dependencies": {
+    "@datastructures-js/binary-search-tree": "^5.3.1",
+    "@datastructures-js/linked-list": "^6.1.1"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "preset": "ts-jest",
+    "testPathIgnorePatterns": [ "<rootDir>/dist/", "<rootDir>/node_modules/" ]
+  },
+  "author": "",
+  "license": "ISC"
+}
