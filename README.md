@@ -7,7 +7,7 @@ See index.js for an overview and requirements.
 npm install
 ```
 
-# Build and Running Unit Tests
+# To Build and Run Unit Tests
 This runs the required (and additional) test cases.
 ```
 npm run build
